@@ -33,7 +33,7 @@ if (isNull _enemy) exitWith {
     _group setVariable [VAR_FORGET_ROLL, nil];
 };
 
-// check suppressorr and smoke
+// check suppressor and smoke
 private _suppressed = false;
 if (missionNamespace getVariable ["AILOS_Setting_SuppressorEnabled", true]) then {
     private _weapon = currentWeapon _enemy;
