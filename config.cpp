@@ -6,7 +6,7 @@ class CfgPatches
         weapons[] = {};
         name = "AILOS";
         requiredAddons[] = { "A3_Data_F", "A3_Characters_F", "cba_main" };
-        author = "99% of this is Nicemman's work from Enhanced Tactical AI & TCL Revamp";
+        author = "99% of this is Niceman's work from Enhanced Tactical AI & TCL Revamp";
     };
 };
 
