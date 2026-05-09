@@ -5,4 +5,4 @@ This is 99% Niceman's work from Enhanced Tactical AI & TCL Revamp reworked to fu
 Enhanced Tactical AI & TCL Revamp is available here: https://steamcommunity.com/sharedfiles/filedetails/?id=3161834110
 
 
-ailos can be found on the Steam workshop here: 
+ailos can be found on the Steam workshop here: https://steamcommunity.com/sharedfiles/filedetails/?edit=true&id=3723127473
