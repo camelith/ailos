@@ -1,3 +1,4 @@
+//postInit to do some shit that was previously set up in deferred execution of TCL's fsm
 diag_log "AILOS: XEH_postInit loaded";
 
 if (is3DEN) exitWith {};
