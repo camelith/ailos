@@ -33,4 +33,21 @@ if (!_canSee) then {
     };
 };
 
+//smoke check for AI pos and intervals to target
+if (_canSee && {missionNamespace getVariable ["AILOS_Setting_SmokeEnabled", true]}) then {
+    private _smokeRadius = missionNamespace getVariable ["AILOS_Setting_SmokeRadius", 15];
+    private _smokeTypes = ["SmokeShell", "SmokeLauncherAmmo"];
+
+    private _smokeAtAI = nearestObjects [_posLeader, _smokeTypes, _smokeRadius];
+    if (count _smokeAtAI > 0) exitWith { _canSee = false };
+
+    private _midpoint = [
+        ((_posLeader select 0) + (_posEnemy select 0)) / 2,
+        ((_posLeader select 1) + (_posEnemy select 1)) / 2,
+        ((_posLeader select 2) + (_posEnemy select 2)) / 2
+    ];
+    private _smokeOnLine = nearestObjects [_midpoint, _smokeTypes, _smokeRadius];
+    if (count _smokeOnLine > 0) then { _canSee = false };
+};
+
 _canSee
